@@ -1,0 +1,15 @@
+3.1 ) SELECT * FROM product WHERE brand='Apple';
+3.2) SELECT * FROM product WHERE price <"1000";
+3.3) SELECT * FROM product WHERE price BETWEEN "500" AND "1500";
+3.4) SELECT Product, price, rating FROM product WHERE brand IN ('Apple', 'Samsung', 'Huawei');
+3.5) SELECT Product,category FROM product WHERE brand LIKE 'Apple';
+
+CREATE TABLE `product` (
+  `Product` varchar(45) DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  `rating` decimal(5,2) DEFAULT NULL,
+  `category` varchar(255) DEFAULT NULL,
+  `brand` varchar(45) DEFAULT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
